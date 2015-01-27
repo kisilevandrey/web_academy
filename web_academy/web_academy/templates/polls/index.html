@@ -18,8 +18,8 @@
     <input type="submit"/>
 </form>
 
-     {% for question in questions_list %}
-       <a href="{% url 'polls:detail' q_id=question.id %}">
+     {% for question in question_list %}
+       <a href="{% url 'polls:detail' pk=question.id %}">
      	<p>{{ question.question_text }}</p>
      	</a>
 
